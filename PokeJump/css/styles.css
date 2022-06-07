@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game{
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid #1ac11a;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(deepskyblue, #f7f5f5);
+}
+
+.footer-banner{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.img{
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    left: 25%;
+    margin: auto;
+}
+
+.pikachu{
+    width: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 25px;
+}
+
+.obstacle{
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    animation: object-animation 1.5s infinite linear;
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+.clouds{
+    position: absolute;
+    animation: object-animation infinite 10s linear;
+}
+
+@keyframes object-animation {
+    from{
+        right: -120px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 120px;
+    }
+
+    50%{
+        bottom: 120px;
+    }
+
+    60%{
+        bottom: 120px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
